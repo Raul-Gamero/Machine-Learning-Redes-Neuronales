@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mapa Conceptual - Machine Learning y RNA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Machine Learning & Redes Neuronales</h1>
+      <p class="hero-subtitle">
+        Un mapa conceptual interactivo y resumido para entender lo esencial.
+      </p>
+      <button id="expandAllBtn">Expandir / Colapsar todo</button>
+    </div>
+  </header>
+
+    <main class="container">
+    <section class="central-node">
+      <div class="node-circle">
+        <span>ML & RNA</span>
+      </div>
+      <p class="central-text">
+        Machine Learning es un área de la Inteligencia Artificial donde los sistemas aprenden patrones a partir de datos.
+      </p>
+    </section>
+
+    <section class="cards-grid">
+      <!-- 1. Introducción al Machine Learning -->
+      <article class="card" data-card>
+        <h2>Introducción al Machine Learning</h2>
+        <p class="card-tagline">¿Qué es y para qué sirve?</p>
+        <button class="toggle-btn">Ver más</button>
+        <div class="card-content">
+          <p>
+            Machine Learning es un tipo de IA que permite a los modelos aprender de datos y mejorar su desempeño sin reglas programadas explícitamente.[web:40][web:42]
+          </p>
+          <ul>
+            <li><strong>Objetivo:</strong> aprender patrones y tomar decisiones basadas en datos.</li>
+            <li><strong>Aplicaciones:</strong> imágenes, voz, texto, recomendaciones y predicción de valores futuros.[web:34][web:35][web:37]</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 2. Redes Neuronales Artificiales -->
+      <article class="card" data-card>
+        <h2>Redes Neuronales Artificiales (RNA)</h2>
+        <p class="card-tagline">Cerebros artificiales dentro del ML</p>
+        <button class="toggle-btn">Ver más</button>
+        <div class="card-content">
+          <p>
+            Una RNA es un modelo de Machine Learning inspirado en el cerebro, compuesto por neuronas artificiales conectadas en capas.[web:32][web:34][web:37]
+          </p>
+          <ul>
+            <li><strong>Relación con IA:</strong> son un método dentro del ML, usado en IA moderna (visión, lenguaje, audio).[web:35][web:40][web:42]</li>
+            <li><strong>Idea clave:</strong> aprenden pesos que transforman entradas en predicciones.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 3. Características de las RNA -->
+      <article class="card" data-card>
+        <h2>Características de las RNA</h2>
+        <p class="card-tagline">Errores, ventajas y límites</p>
+        <button class="toggle-btn">Ver más</button>
+        <div class="card-content">
+          <h3>Errores comunes</h3>
+          <ul>
+            <li>Overfitting: aprenden demasiado bien el entrenamiento y fallan en nuevos datos.[web:43]</li>
+            <li>Datos pobres o mal preprocesados (ruido, desbalance).</li>
+          </ul>
+          <h3>Ventajas</h3>
+          <ul>
+            <li>Detectan patrones muy complejos y no lineales.[web:43][web:37]</li>
+            <li>Escalan bien con grandes cantidades de datos.[web:38]</li>
+          </ul>
+          <h3>Desventajas</h3>
+          <ul>
+            <li>Difíciles de interpretar (“caja negra”).[web:12][web:15][web:43]</li>
+            <li>Requieren muchos datos y recursos de cómputo.[web:38][web:15]</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 4. Clasificación de las RNA -->
+      <article class="card" data-card>
+        <h2>Clasificación de las RNA</h2>
+        <p class="card-tagline">Según la tarea que resuelven</p>
+        <button class="toggle-btn">Ver más</button>
+        <div class="card-content">
+          <ul>
+            <li>
+              <strong>Aproximación de funciones / Regresión:</strong>
+              redes que predicen valores numéricos continuos.
+            </li>
+            <li>
+              <strong>Clasificación:</strong>
+              asignan etiquetas (por ejemplo, spam / no spam, tipo de imagen).
+            </li>
+            <li>
+              <strong>Clustering:</strong>
+              redes que agrupan datos similares sin etiquetas previas.
+            </li>
+            <li>
+              <strong>Predicción temporal:</strong>
+              redes para series temporales (señales, ventas, precios).
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 5. Fundamentos de una RNA -->
+      <article class="card" data-card>
+        <h2>Fundamentos y estructura básica</h2>
+        <p class="card-tagline">Cómo está construida una red</p>
+        <button class="toggle-btn">Ver más</button>
+        <div class="card-content">
+          <h3>Elementos clave</h3>
+          <ul>
+            <li>Neuronas: unidades que reciben entradas, las ponderan y aplican una función de activación.[web:32][web:39][web:42]</li>
+            <li>Pesos y sesgos: parámetros que la red aprende durante el entrenamiento.[web:37][web:39]</li>
+            <li>Función de activación: introduce no linealidad (ReLU, sigmoide, tanh).[web:34][web:42]</li>
+          </ul>
+          <h3>Estructura por capas</h3>
+          <ul>
+            <li><strong>Capa de entrada:</strong> recibe los datos.[web:36][web:39][web:41]</li>
+            <li><strong>Capas ocultas:</strong> extraen representaciones internas.[web:36][web:39]</li>
+            <li><strong>Capa de salida:</strong> genera la predicción final.[web:36][web:41]</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Mapa conceptual interactivo · Machine Learning & Redes Neuronales Artificiales</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
